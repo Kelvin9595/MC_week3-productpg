@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>PHONE WORLD</h1>
+    </header>
+
+    <div class="category-tabs">
+        <button class="tab" onclick="showCategory('electronics')">SAMSUNG</button>
+        <button class="tab" onclick="showCategory('clothing')">APPLE</button>
+        <button class="tab" onclick="showCategory('books')">REALME</button>
+        <button class="tab" onclick="handleViewCart()">View Cart <span id="cart-count">0</span></button>
+    </div>
+
+    <div id="electronics" class="product-container fade-in">
+        
+        <div class="product-card">
+            <img src="1.jfif" alt="Electronics Product">
+            <h2>SAMSUNG S6</h2>
+            <p class="price">$160</p>
+            <p class="details">Black | 6gb ram  128gb rom | 60hz display | 20mp camera| amoled display</p>
+            <button onclick="handleAddToCart('SAMSUNG S6', 160)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="2.jfif" alt="Electronics Product">
+            <h2>SAMSUNG S21 FE</h2>
+            <p class="price">$300</p>
+            <p class="details">Grey | 16gb ram  256gb rom | 120hz display | 64mp camera| amoled display</p>
+            <button onclick="handleAddToCart('SAMSUNG S21 FE', 300)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="3.jfif" alt="Electronics Product">
+            <h2>SAMSUNG A14</h2>
+            <p class="price">$259.99</p>
+            <p class="details">Silver | 6gb ram  256gb rom | 90hz display | 20mp camera| amoled display</p>
+            <button onclick="handleAddToCart('SAMSUNG A14', 259.99)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="4.jfif" alt="Electronics Product">
+            <h2>SAMSUNG GALAXY M14</h2>
+            <p class="price">$349</p>
+            <p class="details">Grey | 16gb ram  256gb rom | 120hz display | 64mp camera| amoled display</p>
+            <button onclick="handleAddToCart('SAMSUNG GALAXY M14', 349.99)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="5.jfif" alt="Electronics Product">
+            <h2>SAMSUNG A13</h2>
+            <p class="price">$149.99</p>
+            <p class="details">light grey | 8gb ram  256gb rom | 60hz display | 32mp camera| amoled display</p>
+            <button onclick="handleAddToCart('SAMSUNG A13', 149.99)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="6.jfif" alt="Electronics Product">
+            <h2>SAMSUNG GALAXY S20</h2>
+            <p class="price">$399.99</p>
+            <p class="details">Rose gold | 16gb ram  256gb rom | 120hz display | 100mp camera| amoled display</p>
+            <button onclick="handleAddToCart('SAMSUNG GALAXY S20', 399.99)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="7.jfif" alt="Electronics Product">
+            <h2>SAMSUNG M20</h2>
+            <p class="price">$139.99</p>
+            <p class="details">Grey | 6gb ram  256gb rom | 90hz display | 28mp camera| amoled display</p>
+            <button onclick="handleAddToCart('SAMSUNG M20', 139.99)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="8.jfif" alt="Electronics Product">
+            <h2>SAMSUNG FOLD</h2>
+            <p class="price">$499.99</p>
+            <p class="details">Grey | 16gb ram  256gb rom | 120hz display | 64mp camera| amoled display</p>
+            <button onclick="handleAddToCart('SAMSUNG FOLD', 499.99)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        
+    </div>
+
+    <div id="clothing" class="product-container fade-in" style="display: none;">
+        
+        <div class="product-card">
+            <img src="9.jfif" alt="Clothing Product">
+            <h2>IPHONE 13 PRO MAX</h2>
+            <p class="price">$899.99</p>
+            <p class="details">Grey | 16gb ram  256gb rom | 90hz display | 32mp camera| amoled display</p>
+            <button onclick="handleAddToCart('IPHONE 13 PRO MAX', 899.99)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="10.jfif" alt="Clothing Product">
+            <h2>IPHONE SE</h2>
+            <p class="price">$299</p>
+            <p class="details">Black | 4gb ram  128gb rom | 60hz display | 12mp camera| amoled display</p>
+            <button onclick="handleAddToCart('IPHONE SE', 299.99)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="11.jfif" alt="Clothing Product">
+            <h2>IPHONE 8</h2>
+            <p class="price">$566.99</p>
+            <p class="details">White` | 6gb ram  256gb rom | 60hz display | 18mp camera| amoled display</p>
+            <button onclick="handleAddToCart('IPHONE 8', 566.99)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="12.jfif" alt="Clothing Product">
+            <h2>IPHONE SE 2</h2>
+            <p class="price">$199.99</p>
+            <p class="details">Black | 8gb ram  128gb rom | 60hz display | 12mp camera| amoled display</p>
+            <button onclick="handleAddToCart('IPHONE SE 2', 199.99)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="13.jfif" alt="Clothing Product">
+            <h2>IPHONE 14 PRO MAX</h2>
+            <p class="price">$899.99</p>
+            <p class="details">Gold | 16gb ram  256gb rom | 120hz display | 64mp camera| amoled display</p>
+            <button onclick="handleAddToCart('IPHONE 14 PRO MAX', 899.99)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="14.jfif" alt="Clothing Product">
+            <h2>IPHONE 11 PRO MAX</h2>
+            <p class="price">$799.99</p>
+            <p class="details">silver | 16gb ram  256gb rom | 120hz display | 64mp camera| amoled display</p>
+            <button onclick="handleAddToCart('IPHONE 11 PRO MAX', 799.99)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="15.jfif" alt="Clothing Product">
+            <h2>IPHONE 12</h2>
+            <p class="price">$599.99</p>
+            <p class="details">pink | 8gb ram  256gb rom | 90hz display | 64mp camera| amoled display</p>
+            <button onclick="handleAddToCart('IPHONE 12', 599.99)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="16.jfif" alt="Clothing Product">
+            <h2>IPHONE 12 PRO MAX</h2>
+            <p class="price">$699.99</p>
+            <p class="details">blue | 16gb ram  256gb rom | 120hz display | 64mp camera| amoled display</p>
+            <button onclick="handleAddToCart('IPHONE 12 PRO MAX', 699.99)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+
+       
+    </div>
+
+    <div id="books" class="product-container fade-in" style="display: none;">
+        <
+        <div class="product-card">
+            <img src="17.jfif" alt="Book Cover">
+            <h2>REALME 6I</h2>
+            <p class="price">$159.99</p>
+            <p class="details">Pink | 6gb ram  256gb rom | 90hz display | 18mp camera| led display</p>
+            <button onclick="handleAddToCart('REALME 6I', 159.99)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="18.jfif" alt="Book Cover">
+            <h2>REALME 5S</h2>
+            <p class="price">$139.99</p>
+            <p class="details">Blue | 6gb ram  128gb rom | 60hz display | 64mp camera| led display</p>
+            <button onclick="handleAddToCart('REALME 5S', 139.99)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="19.jfif" alt="Book Cover">
+            <h2>REALME 7 PRO</h2>
+            <p class="price">$159.99</p>
+            <p class="details">Blue | 6gb ram  256gb rom | 60hz display | 64mp camera| amoled display</p>
+            <button onclick="handleAddToCart('REALME 7 PRO', 159.99)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="20.jfif" alt="Book Cover">
+            <h2>REALME 5</h2>
+            <p class="price">$129.99</p>
+            <p class="details">Green | 4gb ram  128gb rom | 60hz display | 24mp camera| led display</p>
+            <button onclick="handleAddToCart('REALME 5', 129.99)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="21.jfif" alt="Book Cover">
+            <h2>REALME 11 PRO 5G</h2>
+            <p class="price">$169.99</p>
+            <p class="details">WHITE  | 16gb ram  256gb rom | 120hz display | 64mp camera| amoled display</p>
+            <button onclick="handleAddToCart('REALME 11 PRO 5G', 169.99)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="22.jfif" alt="Book Cover">
+            <h2>REALME X</h2>
+            <p class="price">$149.99</p>
+            <p class="details">Fusion | 8gb ram  256gb rom | 120hz display | 48mp camera| amoled display</p>
+            <button onclick="handleAddToCart('REALME X', 149.99)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="23.jfif" alt="Book Cover">
+            <h2>REALME 6</h2>
+            <p class="price">$139.99</p>
+            <p class="details">Sky Blue | 12gb ram  256gb rom | 60hz display | 24mp camera| led display</p>
+            <button onclick="handleAddToCart('REALME 6', 139.99)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="24.jfif" alt="Book Cover">
+            <h2>REALME 8 PRO</h2>
+            <p class="price">$128.99</p>
+            <p class="details">Blue | 8gb ram  256gb rom | 90hz display | 64mp camera| amoled display</p>
+            <button onclick="handleAddToCart('REALME 8 PRO', 128.99)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        
+        
+    </div>
+    <div id="cart-preview" class="cart-preview">
+        <div id="cart-items-container"></div>
+        <div id="cart-total" class="cart-total"></div>
+        <div class="cart-actions">
+            <button onclick="closeCartPreview()">Close</button>
+            <button>Checkout</button>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
